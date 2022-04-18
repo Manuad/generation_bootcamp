@@ -1,0 +1,112 @@
+nav {
+    padding: 5px;
+    border-bottom: #69696950 solid 3px;
+    border-right: #69696950 solid 2px;
+    background-color: #add8e635;
+    border-radius: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 25px;
+    letter-spacing: 1.8px;
+    display: inline-block;
+    text-decoration: none;
+    color: #69696980;
+}
+
+nav h1 {
+    padding-top: 45px;
+    font-size: 30px;
+    letter-spacing: 1.8px;
+    font-family: monospace;
+    border-bottom: #69696988 solid 3px;
+}
+
+h1 {
+    color: #696969;
+    padding-bottom: 20px;
+}
+a {
+    color: #69696950;
+    text-decoration: none;
+    transition: 600ms;
+}
+
+a:hover {
+    padding: 5px;
+    border-radius: 15px;
+    color: #696969;
+    background-color: #69696935;
+    transition-timing-function: ease-in-out;
+}
+mark {
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #69696940;
+    color: #fff;
+}
+span {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+input[type=button] {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 12px 12px;
+    margin: 20px 20px;
+    cursor: pointer;
+    transition: 600ms;
+ }
+
+input[type=button]:hover {
+    background-color: #696969;
+    color: #fff;
+    transition-timing-function: ease-in-out;
+}
+p {
+    transition: 700ms;
+}
+p:hover {
+    background-color: #696969;
+    transition: 600ms;
+    color: #ffffff;
+    transition-timing-function: ease-in-out;
+}
+
+.color-texto {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #00ffff20;
+    margin: 1.5rem 0;
+    border-bottom: #69696988 solid 3px;
+    border-right: #69696988 solid 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    line-height: 25px;
+    color: #0000ff80;
+}
+.div-border{
+    background-color: #69696910;
+    border-bottom: #69696988 solid 3px;
+    border-right: #69696988 solid 2px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    transition: 600ms;
+}
+
+.div-border:hover{
+    transition-timing-function: linear;
+    background-color: #696969;
+    color: #ffffff;
+    height: 100px;
+    display: block;
+}
