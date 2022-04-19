@@ -1,0 +1,25 @@
+form {
+    text-align: center;
+    color: whitesmoke;
+    border: 5px solid #00ffff99;
+    border-radius: 5px;
+    background: green;
+}
+
+div {
+    margin-right: 15rem;
+    text-align: end;
+}
+
+div > label {
+    width: 100px;
+}
+
+div > input {
+    border: 2px solid #ff0000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .55s;
+}
+
+
