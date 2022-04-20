@@ -17,13 +17,12 @@
         <input type="week" name="week" id="week">
         <input type="datetime-local" name="dt_local" id="dt_local">
         <input type="time" name="time" id="time">
-        <input type="password" name="pass" id="pass">
+        <input type="password" name="password" id="password">
         <input type="email" name="email" id="email">
         <input type="file" name="file" id="file">
         <input type="range" name="range" id="range">
         <input type="color" name="color" id="color">
         <input type="search" name="search" id="search">
-        <input type="checkbox" name="checkB" id="checkB" checked>
         <input type="radio" name="radio" id="radio">
         <select name="select" id="select">
             <option value="1">1</option>
@@ -35,7 +34,7 @@
     </form>
 
     <hr>
-    <form action="" class="">
+    <form action="" class="" id="formularioDatos">
         <div class="nombre">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
@@ -45,22 +44,17 @@
             <input type="text" name="apellido" id="apellido">
         </div>
         <div class="contrasena">
-            <label for="contrasena">Contraseña</label>
-            <input type="text" name="contrasena" id="contrasena">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass">
         </div>
         <div class="e-mail">
             <label for="e-mail">e-mail</label>
             <input type="email" name="e-mail" id="e-mail">
         </div>
+        <input type="checkbox" name="checkB" id="checkB" value="accept" checked>
+        <input type="submit">
     </form>
     <hr>
-    <script>
-        const color = document.querySelector("#color");
-        console.log(color.value);
-
-        color.addEventListener("change", function (e) {
-            document.body.style.backgroundColor = e.target.value;
-        });
-    </script>
+    <script src="./assets/JS/main.js"></script>
 </body>
 </html>
