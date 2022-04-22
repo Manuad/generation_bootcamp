@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Square+Peg&display=swap");
+
+h1 {
+    font-family: 'Abril Fatface';
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+p {
+    font-family: 'Square Peg', cursive;
+    font-size: 25px;
+}

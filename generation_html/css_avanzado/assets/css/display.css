@@ -1,0 +1,32 @@
+.padre {
+    width: 80%;
+    height: 35rem;
+    border: 1px solid #000;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*
+Justify content los acomoda horizontalmente
+
+Align items los acomoda verticalmente
+*/
+
+.hijo {
+    width: 30%;
+    height: 11rem;
+    border: 1px solid #000;
+}
+
+.div1 {
+    background-color: lightblue;
+}
+
+.div2 {
+    background-color: lightgreen;
+}
+
+.div3 {
+    background-color: lightpink;
+}
