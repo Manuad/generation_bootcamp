@@ -20,14 +20,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Adopta</a>
-        <a class="nav-link" href="#">Memes</a>
-        <a class="nav-link" href="#">Imágenes</a>
+        <a class="nav-link active" href="#carouselExampleControls">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#imagenes">Imágenes</a>
+        <a class="nav-link" href="#video">Videos</a>
+        <a class="nav-link" href="#adopta">Adopta</a>
       </div>
     </div>
   </nav>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="pantalla">
+      <div class="cuadro">
+        <h1>
+          CATS4U
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas sequi excepturi aliquid tempore iusto? Ad ipsum nemo deleniti, quia reiciendis blanditiis, reprehenderit numquam sequi quisquam ipsa natus provident eveniet iste?</p>
+      </div>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://images.pexels.com/photos/991831/pexels-photo-991831.jpeg?cs=srgb&dl=pexels-%D0%BD%D0%B0%D1%82%D0%B0%D0%BB%D1%8C%D1%8F-%D1%81%D0%B5%D0%BC%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0-991831.jpg&fm=jpg" class="d-block w-100" alt="...">
@@ -58,7 +66,7 @@
     </div>
   </div>
   
-  <div id="imagenes">
+  <div id="imagenes" class="mt-5">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 mt-3 mb-3">
         <div class="col mb-4">
@@ -109,30 +117,30 @@
     </div>
   </div>
   
-<div id="video">
-  <div class="container-fluid">
-    <div class="row p-3 d-flex align-items-center bg-dark">
-      <div class="col-8">
-        <iframe src="https://www.youtube.com/embed/ce0LPDPV5NE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="col-4 text-white">
-        <h2>Video antes de adoptar</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas et cumque culpa excepturi sed modi saepe optio. Praesentium quo laudantium id. Modi necessitatibus explicabo odio incidunt hic, reiciendis sint maxime, minus velit, debitis officia laborum! Perferendis illum nam, recusandae quia rem, ipsa tenetur veniam vitae quas quam, pariatur illo.</p>
+  <div id="video">
+    <div class="container-fluid">
+      <div class="row p-3 d-flex align-items-center bg-dark">
+        <div class="col-sm-12 col-md-7 col-lg-6">
+          <iframe src="https://www.youtube.com/embed/ce0LPDPV5NE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-6 text-white">
+          <h2>Video antes de adoptar</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas et cumque culpa excepturi sed modi saepe optio. Praesentium quo laudantium id. Modi necessitatibus explicabo odio incidunt hic, reiciendis sint maxime, minus velit, debitis officia laborum! Perferendis illum nam, recusandae quia rem, ipsa tenetur veniam vitae quas quam, pariatur illo.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-  <div class="adoptar">
+  <div id="adopta" class="adoptar">
     <div class="container">
-      <div class="row d-flex align-items-center p-2">
-        <div class="col-6">
-          <h2 class="">Adóptame</h2>
+      <div class="row align-items-center p-2">
+        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1 ">
+          <h2>Adóptame</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque possimus maxime nisi porro, nihil modi, commodi quibusdam voluptatem voluptates molestiae quae eaque praesentium aliquid tempore nam beatae blanditiis harum.</p>
-          <input class="btn btn-outline-dark bg-ligt" type="button" value="Saber más">
+          <input class="btn btn-outline-dark bg-ligt mb-3" type="button" value="Saber más">
         </div>
-        <div class="col-6 bb-warning p-4 bg-dark text-white rounded">
-          <form class="" action="#" method="post">
+        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1 bb-warning p-4 bg-dark text-white rounded ">
+          <form id="rowAdoptame" action="#carouselExampleControls" method="post">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
@@ -183,8 +191,17 @@
     </div>
   </div>
   
+  <footer class="blog-footer bg-dark bb-warning">
+    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--Scrollreveal-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/JS/scrollReveal.js"></script>
 </body>
 </html>
