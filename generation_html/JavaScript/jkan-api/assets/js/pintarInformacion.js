@@ -22,7 +22,44 @@ fetch(urlId).then(response => response.json()).then(datos => {
     const templateInfo = `
     <h1>${datosNecesarios.nombre}</h1>
     <p>${datosNecesarios.sinopsis}</p>
-    <input class="btn btn-dark" type="button" value="Agergar a favoritos">
+    <input id="agregarFavoritos" class="btn btn-dark" type="button" value="Agergar a favoritos">
     `;
     informacionAnime.innerHTML = templateInfo;
+
+    const agregarFavoritos = document.getElementById('agregarFavoritos');
+    agregarFavoritos.addEventListener('click', () => {
+
+        /*usando localstorage con JS */
+        const datos = {
+            id: datosNecesarios.id,
+            imagen: datosNecesarios.imagen,
+            nombre: datosNecesarios.nombre,
+            sinopsis: datosNecesarios.sinopsis,
+        }
+
+        const favoritos = []
+        favoritos.push(datos);
+
+        if(localStorage.getItem('favoritos')){
+            const favoritos = JSON.parse(localStorage.getItem('favoritos'));
+
+            datosGuardados = datosGuardados.filter((el) => el.nombre != datos.nombre)
+            datosGuardados.push(datos)
+            console.log('existe');
+            localStorage.setItem(datosNecesarios.id, JSON.stringify(favoritos));
+            favoritos.push(datos);
+        } else {
+            const favoritos = [];
+            console.log('no tienes favoritos');
+            favoritos.push(datos);
+            localStorage.setItem(datosNecesarios.id, JSON.stringify(favoritos));
+        }
+        /*
+        console.log(JSON.parse());
+        localStorage.setItem(datosNecesarios.id, JSON.stringify(favoritos));
+
+        console.log(datos);
+        */
+    });
 });
+
