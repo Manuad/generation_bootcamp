@@ -1,8 +1,6 @@
 const busqueda = window.location.href.split('=').pop();
-
 const busquedaAnimes = document.getElementById('busquedaAnimes');
 //console.log(busqueda);
-
 const urlBusqueda = `https://api.jikan.moe/v4/anime?q=${busqueda}&order_by=popularity`;
 //console.log(urlBusqueda);
 
