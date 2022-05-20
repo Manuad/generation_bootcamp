@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/generation_html.iml" filepath="$PROJECT_DIR$/generation_html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasicos/JavaBasicos.iml" filepath="$PROJECT_DIR$/JavaBasicos/JavaBasicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
     </modules>
   </component>
 </project>
