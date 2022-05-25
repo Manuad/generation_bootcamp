@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalculadoraTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-25T21:57:21" hostname="MANUTHEBOSS" time="0.042">
+  <properties/>
+  <testcase name="MÃ©todo para comprobar suma" classname="CalculadoraTest" time="0.042"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
